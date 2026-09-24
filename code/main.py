@@ -60,6 +60,7 @@ df_user_history = pd.read_csv(os.path.join(DATA_DIR, 'user_history.csv'))
 
 # Reading the actual input file
 df_claims = pd.read_csv(INPUT_FILE_PATH)
+df_claims = df_claims[["user_id","image_paths","user_claim","claim_object"]]
 
 # Importing necessary Ollama models
 OLLAMA_TEXT_MODEL = os.getenv('OLLAMA_TEXT_MODEL')
