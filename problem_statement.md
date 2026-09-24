@@ -52,6 +52,7 @@ Multiple images in `image_paths` are separated by semicolons:
 images/test/case_001/img_1.jpg;images/test/case_001/img_2.jpg
 ```
 
+
 The image ID is the filename without extension, such as `img_1`.
 
 ## Input schema
