@@ -115,6 +115,7 @@ def image_classifier(claim):
     - `severity`: `none`, `low`, `medium`, `high`, or `unknown`
     
     Refer to the {df_temp[["applies_to","minimum_image_evidence"]].to_string(index=False)} to determine the `evidence_standard_met` and `evidence_standard_met_reason` fields by analyzing the images and the claim conversation.
+    Decide wisely whether the image evidence is necessary or not. Resturn false if you feel so.
     Refer to the user history for this user: {df_user_history[df_user_history['user_id']==claim['user_id']].to_string(index=False)}.
     Use this to determine `risk_flags` and `claim_status`.
     Use the image to identify the `issue_type`, `object_part`.
